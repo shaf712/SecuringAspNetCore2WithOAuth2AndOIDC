@@ -79,6 +79,7 @@ namespace Shaf.IDP
                     ClientName = "Image Gallery",
                     ClientId = "imagegalleryclient",
                     AllowedGrantTypes = GrantTypes.Hybrid,
+                    //AllowedGrantTypes = what kind of flow are you using? For our case, we choose Hybrid flow
                     AccessTokenType = AccessTokenType.Reference,
                     //IdentityTokenLifetime = ...
                     //AuthorizationCodeLifetime = ...
@@ -97,12 +98,12 @@ namespace Shaf.IDP
                     AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
-                        IdentityServerConstants.StandardScopes.Profile,
-                        IdentityServerConstants.StandardScopes.Address,
-                        "roles",
-                        "imagegalleryapi",
-                        "country",
-                        "subscriptionlevel"
+                        //IdentityServerConstants.StandardScopes.Profile,
+                        //IdentityServerConstants.StandardScopes.Address,
+                        //"roles",
+                        //"imagegalleryapi",
+                        //"country",
+                        //"subscriptionlevel"
                     },
                     ClientSecrets =
                     {
