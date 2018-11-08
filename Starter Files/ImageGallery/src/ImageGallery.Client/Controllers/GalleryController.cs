@@ -1,10 +1,15 @@
-﻿using ImageGallery.Client.Services;
+﻿using IdentityModel.Client;
+using ImageGallery.Client.Services;
 using ImageGallery.Client.ViewModels;
 using ImageGallery.Model;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
@@ -12,6 +17,7 @@ using System.Threading.Tasks;
 
 namespace ImageGallery.Client.Controllers
 {
+    [Authorize] //use this tag to make sure this part of the application cannot be accessed without an authenticated user 
     public class GalleryController : Controller
     {
         private readonly IImageGalleryHttpClient _imageGalleryHttpClient;
@@ -23,6 +29,7 @@ namespace ImageGallery.Client.Controllers
 
         public async Task<IActionResult> Index()
         {
+			await WriteOutIdentityInformation(); 
             // call the API
             var httpClient = await _imageGalleryHttpClient.GetClient(); 
 
@@ -160,6 +167,65 @@ namespace ImageGallery.Client.Controllers
             }
 
             throw new Exception($"A problem happened while calling the API: {response.ReasonPhrase}");
-        }               
-    }
+        }
+
+		public async Task WriteOutIdentityInformation()
+		{
+			// get the saved identity token
+			var identityToken = await HttpContext
+				.GetTokenAsync(OpenIdConnectParameterNames.IdToken);
+
+			// write it out
+			Debug.WriteLine($"Identity token: {identityToken}");
+
+			// write out the user claims
+			foreach (var claim in User.Claims)
+			{
+				Debug.WriteLine($"Claim type: {claim.Type} - Claim value: {claim.Value}");
+			}
+		}
+
+		public async Task Logout()
+		{
+			//Clears the local cookie ("Cookies" must match name from scheme) 
+			//This logs you out of the CLIENT application, but NOT the IDP 
+			await HttpContext.SignOutAsync("Cookies"); //"Cookies" scheme is for the client app 
+			await HttpContext.SignOutAsync("oidc"); //"oidc" scheme is to redirect to the end-session endpoint at the level of the IDP where the IDP can then clear its own cookie
+		}
+
+		public async Task<IActionResult> OrderFrame()
+		{
+			//GETTING more CLAIMS from the USER-INFO ENDPOINT 
+
+			//we want to call the UserInfo endpoint 
+			//to do that, we need to create the URI to call the endpoint 
+			//we need to pass in the access token, and we need to parse the results 
+			var discoveryClient = new DiscoveryClient("https://localhost:44387");
+			var metaDataResponse = await discoveryClient.GetAsync();
+			var userInfoClient = new UserInfoClient(metaDataResponse.UserInfoEndpoint);
+			var accessToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.AccessToken);
+			var response = await userInfoClient.GetAsync(accessToken);
+			var address = response.Claims.FirstOrDefault(c => c.Type == "address")?.Value;
+
+			return View(new OrderFrameViewModel(address)); 
+		}
+
+		public async Task<IActionResult> ViewEmail()
+		{
+			//GETTING more CLAIMS from the USER-INFO ENDPOINT 
+
+			//we want to call the UserInfo endpoint 
+			//to do that, we need to create the URI to call the endpoint 
+			//we need to pass in the access token, and we need to parse the results 
+			var discoveryClient = new DiscoveryClient("https://localhost:44387");
+			var metaDataResponse = await discoveryClient.GetAsync();
+			var userInfoClient = new UserInfoClient(metaDataResponse.UserInfoEndpoint);
+			var accessToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.AccessToken);
+			var response = await userInfoClient.GetAsync(accessToken);
+			var email = response.Claims.FirstOrDefault(c => c.Type == "email")?.Value;
+
+			return View(new EmailViewModel(email));
+		}
+
+	}
 }

@@ -20,3 +20,14 @@ E:\Users\sharfaraz\Desktop\Securing ASP.Net Core 2 with OAuth2 and OpenID Connec
 E:\Users\sharfaraz\Desktop\Securing ASP.Net Core 2 with OAuth2 and OpenID Connect\SecuringAspNetCore2WithOAuth2AndOIDC\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.AssemblyInfo.cs
 E:\Users\sharfaraz\Desktop\Securing ASP.Net Core 2 with OAuth2 and OpenID Connect\SecuringAspNetCore2WithOAuth2AndOIDC\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.dll
 E:\Users\sharfaraz\Desktop\Securing ASP.Net Core 2 with OAuth2 and OpenID Connect\SecuringAspNetCore2WithOAuth2AndOIDC\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.pdb
+C:\Users\shassan\Documents\GitHub\SecuringAspNetCore2WithOAuth2AndOIDC\Starter Files\ImageGallery\src\Shaf.IDP\bin\Debug\netcoreapp2.0\Shaf.IDP.deps.json
+C:\Users\shassan\Documents\GitHub\SecuringAspNetCore2WithOAuth2AndOIDC\Starter Files\ImageGallery\src\Shaf.IDP\bin\Debug\netcoreapp2.0\Shaf.IDP.runtimeconfig.json
+C:\Users\shassan\Documents\GitHub\SecuringAspNetCore2WithOAuth2AndOIDC\Starter Files\ImageGallery\src\Shaf.IDP\bin\Debug\netcoreapp2.0\Shaf.IDP.runtimeconfig.dev.json
+C:\Users\shassan\Documents\GitHub\SecuringAspNetCore2WithOAuth2AndOIDC\Starter Files\ImageGallery\src\Shaf.IDP\bin\Debug\netcoreapp2.0\Shaf.IDP.dll
+C:\Users\shassan\Documents\GitHub\SecuringAspNetCore2WithOAuth2AndOIDC\Starter Files\ImageGallery\src\Shaf.IDP\bin\Debug\netcoreapp2.0\Shaf.IDP.pdb
+C:\Users\shassan\Documents\GitHub\SecuringAspNetCore2WithOAuth2AndOIDC\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.csproj.CoreCompileInputs.cache
+C:\Users\shassan\Documents\GitHub\SecuringAspNetCore2WithOAuth2AndOIDC\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.AssemblyInfoInputs.cache
+C:\Users\shassan\Documents\GitHub\SecuringAspNetCore2WithOAuth2AndOIDC\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.AssemblyInfo.cs
+C:\Users\shassan\Documents\GitHub\SecuringAspNetCore2WithOAuth2AndOIDC\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.dll
+C:\Users\shassan\Documents\GitHub\SecuringAspNetCore2WithOAuth2AndOIDC\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.pdb
+C:\Users\shassan\Documents\GitHub\SecuringAspNetCore2WithOAuth2AndOIDC\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.csprojAssemblyReference.cache

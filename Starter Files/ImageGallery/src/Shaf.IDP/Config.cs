@@ -31,8 +31,9 @@ namespace Shaf.IDP
                         new Claim("family_name", "Underwood"),
                         new Claim("address", "Main Road 1"),
                         new Claim("role", "FreeUser"),
-                        new Claim("subscriptionlevel", "FreeUser"),
-                        new Claim("country", "nl")
+						new Claim("subscriptionlevel", "FreeUser"),
+						new Claim("email", "frank@gmail.com"),
+						new Claim("country", "nl")
                     }
                 },
                 new TestUser
@@ -45,19 +46,20 @@ namespace Shaf.IDP
                     {
                         new Claim("given_name", "Claire"),
                         new Claim("family_name", "Underwood"),
-                        //new Claim("address", "Big Street 2"),
-                        //new Claim("role", "PayingUser"),
+						new Claim("address", "Big Street 2"),
+						new Claim("email", "claire@claire.com"),
+						new Claim("role", "PayingUser"),
                         //new Claim("subscriptionlevel", "PayingUser"),
                         //new Claim("country", "be")
                     }
-                }
+				}
             };
         }
 
         public static IEnumerable<IdentityResource> GetIdentityResources()
         {
-            return new List<IdentityResource>()
-            {
+			return new List<IdentityResource>()
+			{
                 //THESE ARE SCOPES
 
                 //Identity Resources map to scopes that give identity-related information 
@@ -66,6 +68,14 @@ namespace Shaf.IDP
                 //OpenId() ensures that the SubjectId is included 
                 //if the client requests the OpenId() scope, the the user identiifer claim (which is SubjectId) is  returned
                 new IdentityResources.Profile(),
+				new IdentityResources.Address(),
+				new IdentityResources.Email(),
+				//create a CUSTOM scope for claims that aren't caught by the common Identity Resources above
+				new IdentityResource
+				(
+					"roles", //SCOPE name
+					"YOUR role(s)",
+					new List<string>() { "role" }) //name of the claim that the scope will reference 
                 //the Profile scope maps to profile-related claims like the ones in the list of claims
             };
         }
@@ -91,6 +101,7 @@ namespace Shaf.IDP
                     {
                         "https://localhost:44336/signin-oidc"
                     },
+					//you need this post logout URI to successfully log out of the client application without getting a prompt to log out from the IDP also s
                     PostLogoutRedirectUris = new List<string>()
                     {
                         "https://localhost:44336/signout-callback-oidc"
@@ -98,13 +109,14 @@ namespace Shaf.IDP
                     AllowedScopes =
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
-                        //IdentityServerConstants.StandardScopes.Profile,
-                        //IdentityServerConstants.StandardScopes.Address,
-                        //"roles",
-                        //"imagegalleryapi",
+                        IdentityServerConstants.StandardScopes.Profile,
+						IdentityServerConstants.StandardScopes.Address, 
+						IdentityServerConstants.StandardScopes.Email,
+                        "roles"
                         //"country",
                         //"subscriptionlevel"
                     },
+                    //configure client secrets to allow the client application to call the token endpoint
                     ClientSecrets =
                     {
                         new Secret("secret".Sha256())
