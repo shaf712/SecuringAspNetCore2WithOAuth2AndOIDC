@@ -12572,11 +12572,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Users\\sharfaraz\\Desktop\\SecuringAspNetCore2WithOAuth2AndOIDC-master\\Starter Files\\ImageGallery\\src\\Shaf.IDP\\Shaf.IDP.csproj",
+      "projectUniqueName": "E:\\Users\\sharfaraz\\Desktop\\Securing ASP.Net Core 2 with OAuth2 and OpenID Connect\\SecuringAspNetCore2WithOAuth2AndOIDC\\Starter Files\\ImageGallery\\src\\Shaf.IDP\\Shaf.IDP.csproj",
       "projectName": "Shaf.IDP",
-      "projectPath": "E:\\Users\\sharfaraz\\Desktop\\SecuringAspNetCore2WithOAuth2AndOIDC-master\\Starter Files\\ImageGallery\\src\\Shaf.IDP\\Shaf.IDP.csproj",
+      "projectPath": "E:\\Users\\sharfaraz\\Desktop\\Securing ASP.Net Core 2 with OAuth2 and OpenID Connect\\SecuringAspNetCore2WithOAuth2AndOIDC\\Starter Files\\ImageGallery\\src\\Shaf.IDP\\Shaf.IDP.csproj",
       "packagesPath": "C:\\Users\\sharfaraz\\.nuget\\packages\\",
-      "outputPath": "E:\\Users\\sharfaraz\\Desktop\\SecuringAspNetCore2WithOAuth2AndOIDC-master\\Starter Files\\ImageGallery\\src\\Shaf.IDP\\obj\\",
+      "outputPath": "E:\\Users\\sharfaraz\\Desktop\\Securing ASP.Net Core 2 with OAuth2 and OpenID Connect\\SecuringAspNetCore2WithOAuth2AndOIDC\\Starter Files\\ImageGallery\\src\\Shaf.IDP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

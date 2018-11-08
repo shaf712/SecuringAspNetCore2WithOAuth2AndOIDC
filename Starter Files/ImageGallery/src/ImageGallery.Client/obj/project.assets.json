@@ -12453,11 +12453,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Users\\sharfaraz\\Desktop\\SecuringAspNetCore2WithOAuth2AndOIDC-master\\Starter Files\\ImageGallery\\src\\ImageGallery.Client\\ImageGallery.Client.csproj",
+      "projectUniqueName": "E:\\Users\\sharfaraz\\Desktop\\Securing ASP.Net Core 2 with OAuth2 and OpenID Connect\\SecuringAspNetCore2WithOAuth2AndOIDC\\Starter Files\\ImageGallery\\src\\ImageGallery.Client\\ImageGallery.Client.csproj",
       "projectName": "ImageGallery.Client",
-      "projectPath": "E:\\Users\\sharfaraz\\Desktop\\SecuringAspNetCore2WithOAuth2AndOIDC-master\\Starter Files\\ImageGallery\\src\\ImageGallery.Client\\ImageGallery.Client.csproj",
+      "projectPath": "E:\\Users\\sharfaraz\\Desktop\\Securing ASP.Net Core 2 with OAuth2 and OpenID Connect\\SecuringAspNetCore2WithOAuth2AndOIDC\\Starter Files\\ImageGallery\\src\\ImageGallery.Client\\ImageGallery.Client.csproj",
       "packagesPath": "C:\\Users\\sharfaraz\\.nuget\\packages\\",
-      "outputPath": "E:\\Users\\sharfaraz\\Desktop\\SecuringAspNetCore2WithOAuth2AndOIDC-master\\Starter Files\\ImageGallery\\src\\ImageGallery.Client\\obj\\",
+      "outputPath": "E:\\Users\\sharfaraz\\Desktop\\Securing ASP.Net Core 2 with OAuth2 and OpenID Connect\\SecuringAspNetCore2WithOAuth2AndOIDC\\Starter Files\\ImageGallery\\src\\ImageGallery.Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12476,8 +12476,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\Users\\sharfaraz\\Desktop\\SecuringAspNetCore2WithOAuth2AndOIDC-master\\Starter Files\\ImageGallery\\src\\ImageGallery.Model\\ImageGallery.Model.csproj": {
-              "projectPath": "E:\\Users\\sharfaraz\\Desktop\\SecuringAspNetCore2WithOAuth2AndOIDC-master\\Starter Files\\ImageGallery\\src\\ImageGallery.Model\\ImageGallery.Model.csproj"
+            "E:\\Users\\sharfaraz\\Desktop\\Securing ASP.Net Core 2 with OAuth2 and OpenID Connect\\SecuringAspNetCore2WithOAuth2AndOIDC\\Starter Files\\ImageGallery\\src\\ImageGallery.Model\\ImageGallery.Model.csproj": {
+              "projectPath": "E:\\Users\\sharfaraz\\Desktop\\Securing ASP.Net Core 2 with OAuth2 and OpenID Connect\\SecuringAspNetCore2WithOAuth2AndOIDC\\Starter Files\\ImageGallery\\src\\ImageGallery.Model\\ImageGallery.Model.csproj"
             }
           }
         }
