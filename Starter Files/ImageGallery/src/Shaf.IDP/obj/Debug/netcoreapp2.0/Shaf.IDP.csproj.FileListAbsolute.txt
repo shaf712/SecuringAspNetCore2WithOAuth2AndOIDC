@@ -1,0 +1,11 @@
+E:\Users\sharfaraz\Desktop\SecuringAspNetCore2WithOAuth2AndOIDC-master\Starter Files\ImageGallery\src\Shaf.IDP\bin\Debug\netcoreapp2.0\Shaf.IDP.deps.json
+E:\Users\sharfaraz\Desktop\SecuringAspNetCore2WithOAuth2AndOIDC-master\Starter Files\ImageGallery\src\Shaf.IDP\bin\Debug\netcoreapp2.0\Shaf.IDP.runtimeconfig.json
+E:\Users\sharfaraz\Desktop\SecuringAspNetCore2WithOAuth2AndOIDC-master\Starter Files\ImageGallery\src\Shaf.IDP\bin\Debug\netcoreapp2.0\Shaf.IDP.runtimeconfig.dev.json
+E:\Users\sharfaraz\Desktop\SecuringAspNetCore2WithOAuth2AndOIDC-master\Starter Files\ImageGallery\src\Shaf.IDP\bin\Debug\netcoreapp2.0\Shaf.IDP.dll
+E:\Users\sharfaraz\Desktop\SecuringAspNetCore2WithOAuth2AndOIDC-master\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.csprojAssemblyReference.cache
+E:\Users\sharfaraz\Desktop\SecuringAspNetCore2WithOAuth2AndOIDC-master\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.csproj.CoreCompileInputs.cache
+E:\Users\sharfaraz\Desktop\SecuringAspNetCore2WithOAuth2AndOIDC-master\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.AssemblyInfoInputs.cache
+E:\Users\sharfaraz\Desktop\SecuringAspNetCore2WithOAuth2AndOIDC-master\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.AssemblyInfo.cs
+E:\Users\sharfaraz\Desktop\SecuringAspNetCore2WithOAuth2AndOIDC-master\Starter Files\ImageGallery\src\Shaf.IDP\bin\Debug\netcoreapp2.0\Shaf.IDP.pdb
+E:\Users\sharfaraz\Desktop\SecuringAspNetCore2WithOAuth2AndOIDC-master\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.dll
+E:\Users\sharfaraz\Desktop\SecuringAspNetCore2WithOAuth2AndOIDC-master\Starter Files\ImageGallery\src\Shaf.IDP\obj\Debug\netcoreapp2.0\Shaf.IDP.pdb
