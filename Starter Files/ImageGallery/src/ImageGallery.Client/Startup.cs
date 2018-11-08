@@ -1,4 +1,5 @@
-﻿using ImageGallery.Client.Services;
+﻿using IdentityModel;
+using ImageGallery.Client.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -56,7 +57,13 @@ namespace ImageGallery.Client
                 options.ClientSecret = "secret";
 				options.ClaimActions.MapUniqueJsonKey("role", "role"); 
 				//initialize UserInfo endpoint to get claims from the scopes that are passed in
-				options.GetClaimsFromUserInfoEndpoint = true; 
+				options.GetClaimsFromUserInfoEndpoint = true;
+
+				options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+				{
+					//NameClaimType = JwtClaimTypes.GivenName, 
+					RoleClaimType = JwtClaimTypes.Role 
+				};
 
             });
         }

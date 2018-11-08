@@ -193,6 +193,8 @@ namespace ImageGallery.Client.Controllers
 			await HttpContext.SignOutAsync("oidc"); //"oidc" scheme is to redirect to the end-session endpoint at the level of the IDP where the IDP can then clear its own cookie
 		}
 
+		[Authorize(Roles = "PayingUser")]
+		//if you only want users with "paying user" roles to see this page
 		public async Task<IActionResult> OrderFrame()
 		{
 			//GETTING more CLAIMS from the USER-INFO ENDPOINT 

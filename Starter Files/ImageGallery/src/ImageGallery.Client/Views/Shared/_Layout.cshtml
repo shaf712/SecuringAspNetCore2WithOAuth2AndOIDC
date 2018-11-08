@@ -43,7 +43,7 @@
 						<li><a asp-area="" asp-controller="Gallery" asp-action="Logout">Logout</a></li>
 					}
 
-					@if (User.IsInRole("Paying User"))
+					@if (User.IsInRole("PayingUser"))
 					{
 						<li><a asp-area="" asp-controller="Gallery" asp-action="OrderFrame">Order a Frame</a></li>
 					}
